@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    background-color: #272727;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.top {
+    display: flex;
+    margin-left: 70px;
+}
+
+.loguinho {
+    width: 100px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.menu{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    height: 64px; 
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    margin: 70px auto;
+}
+
+.emflow {
+    width: 300px;
+}
+
+.wrapper {
+    width: 1000px;
+}
+
+.about {
+    margin: auto;
+    background-color: #434343;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.about-who {
+    padding-left: 30px;
+    width: 400px;
+    text-align: left;
+}
+
+.about-what {
+    text-align: right;
+    width: 400px;
+    margin-top: -40px;
+    margin-left: 500px;
+}
+
+.projects {
+   margin: auto;
+}
+
+.larizClub {
+    margin-top: 30px;
+    width: 1000px;
+}
+
+.siteLariz {
+    text-align: right;
+    width: 400px;
+    margin-top: -200px;
+    margin-left: 500px; 
+    position: relative;
+}
+
+.contact {
+    margin: 110px auto;
+    background-color: #434343;
+    padding: 30px 30px 30px 50px;
+    box-sizing: border-box;
+   
+
+}
+.correspondencia {
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    filter: invert(1);
+}
+
+.email {
+    display: flex;
+    gap: 10px;
+}
+
+.instagram {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.credits {
+    text-align: right;
+    margin-right: 70px;
+}
+
+.fundo {
+    width: 450px;
+    margin-left: 800px;
+    position: absolute;
+    margin-top: -60px;
+    
+}
+
+.linhaFundo1{
+    width: 500px;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: 50px;
+}
+
+.linhaFundo2 {
+    width: 500px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 600px;
+}
+
+.logoInsta {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.contatoEmail {
+    margin-top: 12px;
+}
+
+.textoInsta {
+    margin-top: -1px;
+}
+
+#textoLariz:hover a { 
+    color: #d2d2d2; 
+    transition: color 0.5s ease-out;
+    opacity: 0.7;
+}
+
+.gradient {
+    margin-top: 30px;
+    width: 1000px;
+    height: 477px;
+    background-image: linear-gradient(to bottom right, rgba(255,0,0,0), rgb(0, 0, 0));
+    position: absolute;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+  
+    .fundo{
+        display: none;
+    }
+
+    .about-what {
+        margin: 0px;
+    }
+    
+    .linhaFundo2 {
+        margin: 0px;
+    }
+
+    .siteLariz {
+        margin: 0;
+    }
+
+    .top {
+        margin-left: 0;
+
+    }
+
+    .loguinho {
+        width: 80px;
+    }
+
+    .menu {
+        gap: 10px
+    }
+
+    .about {
+        margin-top: 50px;
+        padding: 5px;
+    }
+
+    .about-who {
+        width: 80%;
+    }
+
+    .about-what {
+        width: 80%;
+        text-align: left;   
+        margin-left: 30px;
+    }
+
+    .linhaFundo1 , .linhaFundo2 {
+        display: none;
+    }
+
+    .larizClub {
+        width: 100%;
+    }
+
+    .siteLariz {
+        width: 90%; 
+        margin-top: -150px;
+    }
+
+    .gradient {
+        width: 90%;
+        height: 156px;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .credits {
+        font-size: small;
+        margin-top: 35px;
+    }
+
+    .projects {
+        margin-top: 10px;
+    }
+
+    .contact {
+        margin-top: 60px;
+    }
+}
