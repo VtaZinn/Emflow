@@ -224,7 +224,6 @@ h2 {
     width: 0%;
     height: 100vh;
     background-image: url(./imagens/fundo_emflow.png);
-    background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 0;
@@ -302,7 +301,7 @@ h2 {
 }
 
 .wave.active {
-    width: 100%
+    width: 100%;
 }
 
 .about.active {
