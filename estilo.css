@@ -424,6 +424,24 @@ h2 {
     .contact {
         margin-top: 60px;
         padding: 50px 40px;
+        flex-direction: column;
+    }
+
+    .contact h1 {
+        line-height: 26pt;
+        margin-bottom: 50px;
+    }
+
+    .contact-icon {
+        margin-top: 30px
+    }
+
+    .contact-icon.active {
+        background-size: 100%;
+    }
+
+    .contatoEmail, .instagram, .whatsapp {
+        font-size: 13pt;
     }
 
     .siteVta {
