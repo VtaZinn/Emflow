@@ -1,17 +1,30 @@
 body {
     margin: 0;
-    font-family: Calibri, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
     background-color: #272727;
     color: white;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
     color: white;
 }
+
+h2 {
+    font-weight: lighter;
+    font-size: 28pt;
+}
+
 .top {
     display: flex;
-    margin-left: 70px;
+    padding-left: 70px;
+    background-color: #272727;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
 }
 
 .loguinho {
@@ -21,51 +34,104 @@ a {
 }
 
 .menu{
-    margin: 0;
+    margin: 8px 0 0;
     display: flex;
     list-style: none;
     gap: 20px;
     align-items: center;
-    height: 64px; 
+    height: 64px;
     text-transform: uppercase;
     font-size: 14px;
+    width: 80%;
+    justify-content: flex-start;
 }
 
 .menu a{
     text-decoration: none;
     color: white;
+    letter-spacing: 1pt;
+    transition: all 0.4s ease;
 }
 
+.menu a::after {
+    content: '';
+    background-color: #78dfff;
+    display: block;
+    width: 0%;
+    height: 3px;
+    transition: all 0.4s ease;
+    margin-top: 2px
+}
+
+.menu a:hover::after {
+    width: 100%
+}
+
+.menu li.cta {
+    justify-self: flex-end;
+    margin: auto 0 auto auto;
+}
+
+.button {
+    background-color: #78dfff;
+    padding: 5px 20px 0px;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+}
+
+.button a {
+    color: black;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.button:hover a {
+    color: white;
+}
+
+
 .main{
-    margin: 70px auto;
+    margin: 24vh auto 18vh;
 }
 
 .emflow {
-    width: 300px;
+    width: 500px;
 }
 
 .wrapper {
     width: 1000px;
+    position: relative;
+    z-index: 0;
 }
 
 .about {
     margin: auto;
     background-color: #434343;
-    padding: 30px;
+    padding: 60px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    color: transparent;
+    transition: all 2s ease;
 }
 
-.about-who {
-    padding-left: 30px;
-    width: 400px;
-    text-align: left;
+.about-text {
+    width: 48%;
 }
 
-.about-what {
-    text-align: right;
-    width: 400px;
-    margin-top: -40px;
-    margin-left: 500px;
+.cta-message {
+    margin: 30px auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-message .button {
+    padding: 8px 30px;
+    margin-left: 30px;
 }
 
 .projects {
@@ -80,23 +146,36 @@ a {
 .siteLariz {
     text-align: right;
     width: 400px;
-    margin-top: -200px;
-    margin-left: 500px; 
+    margin-top: -245px;
+    margin-left: 500px;
     position: relative;
+    z-index: 1;
+}
+
+.project:hover .gradient, .project:hover .gradient1 {
+    opacity: 0.4;
 }
 
 .contact {
     margin: 110px auto;
     background-color: #434343;
-    padding: 30px 30px 30px 50px;
+    padding: 50px 60px 60px;
     box-sizing: border-box;
-   
-
+    display: flex;
 }
+
+.contact .button {
+    padding: 9px;
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+    font-size: 13pt;
+}
+
 .correspondencia {
     width: 20px;
     height: 20px;
-    margin-top: 12px;
+    margin-top: 18px;
     filter: invert(1);
 }
 
@@ -108,7 +187,25 @@ a {
 .instagram {
     display: flex;
     gap: 10px;
-    
+    margin: -12px 0;
+}
+
+.whatsapp {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-icon {
+    align-self: center;
+    background-image: url(./imagens/arroba.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 41%;
+    display: block;
+    filter: invert(1);
+    height: 160px;
+    transition: all 2s ease;
 }
 
 .credits {
@@ -116,26 +213,40 @@ a {
     margin-right: 70px;
 }
 
-.fundo {
-    width: 450px;
-    margin-left: 800px;
-    position: absolute;
-    margin-top: -60px;
-    
+.credits-heart {
+    width: 25px;
+    top: 5px;
+    left: 5px;
+    position: relative;
 }
 
-.linhaFundo1{
-    width: 500px;
+.wave {
+    width: 0%;
+    height: 100vh;
+    background-image: url(./imagens/fundo_emflow.png);
+    background-repeat: no-repeat;
     position: absolute;
-    margin-left: -200px;
-    margin-top: 50px;
+    z-index: 0;
+    margin-top: 22vh;
+    transition: all 1s ease;
 }
 
-.linhaFundo2 {
-    width: 500px;
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 600px;
+.wave:hover {
+    transform: rotate(6deg);
+    margin-top: 25vh;
+}
+
+.contact-text {
+    margin-top: -25px;
+}
+
+.contact a {
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+.contact a:hover {
+    opacity: 0.8
 }
 
 .logoInsta {
@@ -149,27 +260,8 @@ a {
 }
 
 .textoInsta {
-    margin-top: -1px;
+    margin-top: -6px;
 }
-
-#textoLariz:hover a { 
-    color: #d2d2d2; 
-    transition: color 0.5s ease-out;
-    opacity: 0.7;
-}
-
-#email:hover a { 
-    color: #d2d2d2; 
-    transition: color 0.5s ease-out;
-    opacity: 0.7;
-}
-
-#textoInsta:hover a { 
-    color: #d2d2d2; 
-    transition: color 0.5s ease-out;
-    opacity: 0.7;
-}
-
 
 .gradient {
     margin-top: 30px;
@@ -177,6 +269,8 @@ a {
     height: 477px;
     background-image: linear-gradient(to bottom right, rgba(255,0,0,0), rgb(0, 0, 0));
     position: absolute;
+    opacity: 1;
+    transition: all 0.5s ease-out;
 }
 
 .siteVta {
@@ -190,69 +284,113 @@ a {
     height: 477px;
     background-image: linear-gradient(to bottom right, rgba(255,0,0,0), rgb(0, 0, 0));
     position: absolute;
+    opacity: 1;
+    transition: all 0.5s ease-out;
 }
 
+/* Animations */
+.reveal-intro {
+    opacity: 0;
+    transform: translateX(150px);
+    transition: 2s all ease;
+}
+
+.reveal-intro.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.wave.active {
+    width: 100%;
+}
+
+.about.active {
+    color: white
+}
+
+.project-reveal {
+    position: relative;
+    opacity: 0;
+    transition: 5s all ease;
+}
+
+.project-reveal:nth-child(odd) {
+    transform: translateX(-200px);
+}
+
+.project-reveal:nth-child(even) {
+    transform: translateX(200px);
+}
+
+.project-reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.contact-icon.active {
+    background-size: 48%;
+}
 
 @media (max-width: 600px) {
     .wrapper {
-        width: 90%;
+        width: 80%;
         margin: auto;
+    }
+
+    .emflow {
+        width: 100%;
     }
 
     .main {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 50px;
+        margin: 150px auto 100px;
     }
-  
-    .fundo{
+
+    .wave{
         display: none;
-    }
-
-    .about-what {
-        margin: 0px;
-    }
-    
-    .linhaFundo2 {
-        margin: 0px;
-    }
-
-    .siteLariz {
-        margin: 0;
-    }
-
-    .top {
-        margin-left: 0;
-
-    }
-
-    .loguinho {
-        width: 80px;
-    }
-
-    .menu {
-        gap: 10px;
-        padding: 0px  15px;
     }
 
     .about {
         margin-top: 50px;
-        padding: 5px;
+        display: block;
     }
 
-    .about-who {
-        width: 80%;
+    .about-text {
+        width: 100%;
     }
 
-    .about-what {
-        width: 80%;
-        text-align: left;   
-        margin-left: 30px;
+    .top {
+        padding: 0;
     }
 
-    .linhaFundo1 , .linhaFundo2 {
+    .loguinho {
         display: none;
+    }
+
+    .menu {
+        padding: 0px 15px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .cta {
+        display: none;
+    }
+
+    .cta-message h2 {
+        font-size: 20pt;
+    }
+
+    .cta-message {
+        flex-direction: column;
+        text-align: center;
+        font-size: 14pt;
+    }
+
+    .cta-message .button {
+        margin: 0
     }
 
     .larizClub {
@@ -262,12 +400,13 @@ a {
     }
 
     .siteLariz {
-        width: 90%; 
-        margin-top: -150px;
+        margin: 0;
+        width: 90%;
+        font-size: 12pt;
     }
 
     .gradient {
-        width: 90%;
+        width: 100%;
         height: 170px;
         margin: 0;
         margin-top: 30px;
@@ -284,6 +423,25 @@ a {
 
     .contact {
         margin-top: 60px;
+        padding: 50px 40px;
+        flex-direction: column;
+    }
+
+    .contact h1 {
+        line-height: 26pt;
+        margin-bottom: 50px;
+    }
+
+    .contact-icon {
+        margin-top: 30px
+    }
+
+    .contact-icon.active {
+        background-size: 100%;
+    }
+
+    .contatoEmail, .instagram, .whatsapp {
+        font-size: 13pt;
     }
 
     .siteVta {
@@ -293,7 +451,7 @@ a {
     }
 
     .gradient1 {
-        width: 90%;
+        width: 100%;
         height: 170px;
         margin: 0;
         margin-top: 50px;

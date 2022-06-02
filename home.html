@@ -4,90 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css" />
     <title> Emflow - Tecnologia para empreendedores </title>
     <link rel="shortcut icon" href="imagens/favicon.ico" >
-</head>
-<body>  
+<body id="scroll-container">
     <div class="top">
         <div> <img src="imagens/loguinho.png" class="loguinho"> </div>
-        <div>
         <ul class="menu">
             <li> <a href="#main"> Inicio </a> </li>
             <li> <a href="#about"> Sobre </a> </li>
             <li> <a href="#project"> Projetos </a> </li>
-            <li> <a href="#contact"> Contatos </a> </li>
+            <li> <a href="#contact"> Contato </a> </li>
+            <li class="cta button"> <a href="https://wa.me/5511982809454" target="_blank"> Quero criar um site </a> </li>
         </ul>
-        </div>
-         
     </div>
-    <img src="imagens/fundo.png" class="fundo"> 
-    <div class="main wrapper" id="main">
+    <div class="wave"></div>
+    <div class="main wrapper reveal-intro" id="main">
         <img src="imagens/emflow_logo.png" class="emflow" >
-        <h4> Desenvolvimento de sites e aplicativos de alta <br/>
-             qualidade para negócios que voam alto</h4>
+        <h2> Criação de sites e aplicativos de alta
+             qualidade para negócios que voam alto 🚀 </h2>
     </div>
 
     <div class="about wrapper" id="about">
-        <div class="about-who">
-            <h1> Quem somos </h1> 
-            <p> Desenvolvedores com experiência no mercado e paixão por tecnologia. 
-            Há mais de 7 anos participando de projetos incríveis e inovadores.
-            </p>
+        <div class="about-text">
+            <h1> Quem somos </h1>
+            <p> Desenvolvedores com experiência no mercado e paixão por tecnologia. Há mais de 7 anos participando de projetos incríveis e inovadores.</p>
         </div>
-        <img src="imagens/linhaFundo.png" class="linhaFundo1"> 
-        <div class="about-what">
+        <div class="about-text">
             <h1> O que fazemos? </h1>
-            <p> Sites e aplicativos completos, front e back-end e temas shopify.
-
-            </p>
+            <p>Sites e aplicativos completos, incluindo temas para Wordpress e Shopify. Desenvolvemos o projeto ideal de acordo com a sua necessidade! </p>
         </div>
+    </div>
+
+    <div class="wrapper cta-message">
+        <h2> Crie seu site ou aplicativo agora! </h2>  <span class="button"><a href="https://wa.me/5511982809454" target="_blank"> Quero saber mais </a></span>
     </div>
 
     <div class="projects wrapper" id="project">
-        <div class="gradient"></div>
-            <div> 
-                <a href="https://lariz.club/"> <img src="imagens/larizClub.png" class="larizClub" > </a>
-            </div>
-        
-        <div class="siteLariz" id="textoLariz" >
-            
-            <h1><a href="https://lariz.club/"> Site: Lariz Club</h1>
-            <p> Design de interface <br/>
-            Desenvolvimento Wordpress </a></p>
-            
+        <div class="project project-reveal">
+            <a href="https://lariz.club/">
+                <div class="gradient"></div>
+                <div><a href="https://lariz.club/"> <img src="imagens/larizClub.png" class="larizClub" > </a></div>
+
+                <div class="siteLariz" id="textoLariz" >
+                    <h1> Site: Lariz Club</h1>
+                    <p> Design de interface <br/>
+                    Desenvolvimento Wordpress </p>
+                </div>
+            </a>
         </div>
 
-        <div class="gradient1"></div>
-            <div> 
-                <a href="https://djvta.netlify.app/"> <img src="imagens/siteVta.png" class="siteVta" > </a>
-            </div>
-        
-        <div class="siteLariz" id="textoLariz" >
-            
-            <h1><a href="https://djvta.netlify.app/"> Site: Dj Vta </h1>
-            <p> Design de interface <br/>
-            Desenvolvimento HTML, CSS e javascript </a></p>
-            
+        <div class="project project-reveal">
+            <a href="https://djvta.netlify.app/">
+                <div class="gradient1"></div>
+                <div><a href="https://djvta.netlify.app/"> <img src="imagens/siteVta.png" class="siteVta" > </a></div>
+
+                <div class="siteLariz" id="textoLariz" >
+                    <h1>Site: Dj Vta </h1>
+                    <p> Design de interface <br/>
+                    Desenvolvimento HTML, CSS e javascript </p>
+                </div>
+            </a>
         </div>
     </div>
-    
+
     <div class="contact wrapper" id="contact">
-        <img src="imagens/linhaFundo.png" class="linhaFundo2">
-        <h1> Entre em contato </h1>
-        <p> Tem alguma ideia de projeto? Fale com a gente! </p>
-        <div class="email" id="email">
-            <img src="imagens/correspondencia.png" class="correspondencia" >
-            <p class="contatoEmail"> <a href="mailto:emflowco@gmail.com?subject= Pedido de orçamento"> emflowco@gmail.com </a> </p>
-        </div>  
-        <div class="instagram">
-            <img src="imagens/instagram.png" class="logoInsta" >
-            <p class="textoInsta" id="textoInsta"> <a href="https://www.instagram.com/emflow.co/"> @emflow.co </a> </p>
+        <div>
+            <h1> Entre em contato </h1>
+            <p class="contact-text"> Tem alguma ideia de projeto? Fale com a gente! </p>
+            <div class="email" id="email">
+                <img src="imagens/correspondencia.png" class="correspondencia" >
+                <p class="contatoEmail"> <a href="mailto:emflowco@gmail.com?subject= Pedido de orçamento"> emflowco@gmail.com </a> </p>
+            </div>
+            <div class="instagram">
+                <img src="imagens/instagram.png" class="logoInsta" >
+                <p class="textoInsta"> <a href="https://www.instagram.com/emflow.co/"> @emflow.co </a> </p>
+            </div>
+            <div class="whatsapp">
+                <img src="imagens/whatsapp.png" class="logoInsta" >
+                <p class="textoInsta"> <a href="https://wa.me/5511982809454" target="_blank"> 11 98280-9454 </a> </p>
+            </div>
+            <span class="button"><a href="https://wa.me/5511982809454" target="_blank"> Quero criar um site </a></span>
         </div>
+        <div class="contact-icon"></div>
     </div>
-    
 
-    <h3 class="credits"> 2022 - Feito por Victor e Lariz da {emflow}</h3>
+    <h3 class="credits"> 2022 - Feito por Victor e Lariz da {emflow} <img src="./imagens/heart.png" class="credits-heart" /> </h3>
 
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
