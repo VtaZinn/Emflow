@@ -288,6 +288,26 @@ h2 {
     transition: all 0.5s ease-out;
 }
 
+.motivatudy {
+    margin-top: 100px;
+    width: 1000px;
+    margin-bottom: 100px;
+    height: 477px;
+}
+
+.siteMotivatudy{
+    text-align: right;
+    width: 400px;
+    margin-top: -330px;
+    margin-left: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.project1{
+    margin-bottom: 80px;
+}
+
 /* Animations */
 .reveal-intro {
     opacity: 0;
